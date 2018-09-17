@@ -1,3 +1,7 @@
+/*
+Program that uses MPI and has each process print the message. This is from process i of n, where i is the rank of process in MPI_COMM_WORLD and n is the number of process.
+*/
+
 #include <mpi.h>
 #include <stdio.h>
 

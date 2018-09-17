@@ -1,3 +1,6 @@
+/*
+MPI program with two processes: a master and a slave process. Master process with rank 0 reads a integer input from the terminal and send to the slave process. The slave process with rank 1 print out value it received.
+*/
 #include <stdio.h>
 #include "mpi.h"
 #define BUFFER_SIZE 200

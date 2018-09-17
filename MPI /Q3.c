@@ -1,3 +1,6 @@
+/*
+Each slave process print out value it received using MPI_BCast procedure.
+*/
 #include <stdio.h>
 #include "mpi.h"
 #define BUFFER_SIZE 200
@@ -22,6 +25,6 @@
 
 
             MPI_Bcast(&var,1,MPI_INT,0,MPI_COMM_WORLD);
-            printf("\n %d Message 15 received by process %d",var,MyRank);
+            printf("\n %d Message is received by process %d",var,MyRank);
 	    MPI_Finalize();
 	}
